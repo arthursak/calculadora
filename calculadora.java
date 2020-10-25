@@ -6,7 +6,7 @@ public class DesafioCalculadora {
 		System.out.println("/////Bem vindo a calculadora/////");
 		String num1 = JOptionPane.showInputDialog("Digite o primeiro número: ");
 		String num2 = JOptionPane.showInputDialog("Digite o segundo número: ");
-		String opera = JOptionPane.showInputDialog("Digite a operação desejada: ");
+		String opera = JOptionPane.showInputDialog("Digite a operação desejada (EX: (+) para soma, (-) para subtração, (*) para multiplicação, (/) para divisão ou (%) para saber o resto da divisão: ");
 		
 		double val1 = Double.parseDouble(num1);
 		double val2 = Double.parseDouble(num2);
@@ -17,7 +17,7 @@ public class DesafioCalculadora {
 		calculadora = "/".equals(opera) ? val1 / val2 : calculadora;
 		calculadora = "%".equals(opera) ? val1 % val2 : calculadora;
 
-        System.out.println("O resultado da operação" + num1 + opera + num2 + " é: " + calculadora);
+        System.out.println("O resultado da operação " + num1 + opera + num2 + " é: " + calculadora);
         
 	}
 }
